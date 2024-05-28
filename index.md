@@ -6,27 +6,36 @@ title: Course Information
 
 ## Overview
 
-Insert description paragraph
+MATLAB is a coding language that is very popular in academia and relatively easy to learn. This language is particularly good for analysis involving matrices, but is perhaps better known for its plotting capabilities. In this course, you can expect to be acquainted with both and be able to apply code to your own research. 
+ 
+This is an entry-level introduction to programming and is intended for the first-time or beginner-level user who wishes to learn MATLAB. The basics of coding and data analysis are explored, with opportunities to use these principles in realistic tasks. Visualising the data will also be a focus and you will learn how to customise different plots.  
+ 
+After the course, you should feel confident in your abilities to apply code to your research and present results professionally. 
 
 ## Course objectives
 
-This course will covering the following:
+This course will cover the following:
 
-- Bullet point learning objectives
+- Understand how to navigate and use MATLAB for basic usage 
+- Develop an understanding of conditional statements and loops 
+- Be able to confidently apply scripts and functions to data analysis problems  
+- Be able to apply simple data analysis and visualise the results through plots 
+- Recognise how to develop these skills further and notice similarities to other programming languages. 
 
 ## Pre-requisite knowledge
 
-Specify as either essential or preferable, and try to relate to courses we provide and their learning objectives.
+This is an entry-level introduction to programming and is intended for the first-time or beginner-level user who wishes to learn MATLAB.
 
 ## Workshop format
 
-This a hybrid workshop run over XX sessions. The [schedule can be found here](https://uniexeterrse.github.io/UoE-workshop-template/schedule.html).
+This a hybrid workshop run over 2 sessions. The [schedule can be found here](https://uniexeterrse.github.io/UoE-workshop-template/schedule.html).
 
 ## Upcoming course dates
 
-| Session name | Dates | Time  | Venue | Sign up link |
-| --- |--- |--- |--- | --- |
-| Session 1 | TBC | TBC | TBC | TBC |
+| Session name | Dates | Time  | Venue |
+| --- |--- |--- |--- |
+| Session 1 | 13-6-2024 | 1pm - 4pm | Digital Humanities Seminar Room 1 |
+| Session 2 | 20-6-2024 | 1pm - 4pm | Digital Humanities Seminar Room 1 |
 
 Registration for this course is handled by [University of Exeter Researcher Development](https://www.exeter.ac.uk/research/doctoralcollege/early-career-researchers/traininganddevelopment/rdprogramme/)
 
