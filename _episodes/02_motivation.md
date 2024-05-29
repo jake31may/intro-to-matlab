@@ -1,3 +1,18 @@
+---
+layout: page
+title: Motivation
+order: 2
+session: 1
+length: 30
+toc: true
+adapted: true
+attrib_name: Programming with MATLAB - Fundamentals
+attrib_link: https://swcarpentry.github.io/git-novice/03-create/index.html
+attrib_copywrite: Software Carpentry
+attrib_license: CC-BY 4.0
+attrib_license_link: https://creativecommons.org/licenses/by/4.0/
+---
+
 ## Learning Objectives
 
 In this lesson, we will discuss:
