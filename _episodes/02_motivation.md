@@ -4,7 +4,7 @@ In this lesson, we will discuss:
 
 - Who you are, and why you signed up for this course
 - Why you should learn to code
-- Why Python is great!
+- Why MATLAB is useful!
 
 ## Who are you?
 
@@ -28,7 +28,7 @@ But most importantly:
 
 ## Why MATLAB?
 - MATLAB is commonly used in engineering and academic settings.
-- Matrix maniupulation in MATLAB is well considered, so if using matrices is significant part of your research, MATLAB is an obvious choice.
+- Matrix manipulation in MATLAB is well considered, so if using matrices is a significant part of your research, MATLAB is an obvious choice.
 - Present data and plots professionally for publications, presentations and thesis.
 - The learning curve to code and understanding syntax is less steep than other popular languages (perfect for beginners and dabbling)
 - Graphical user interface (GUI) is attractive and easy to use.  
@@ -36,4 +36,4 @@ But most importantly:
 
 ## Why NOT MATLAB?
 
-MATLAB is not open-source, and toolboxes are incredibly expensive. If you plan on ever leaving academia and programming for yourself, or for your own company, you should not learn MATLAB (as you will have to pay huge amounts to avoid wasting your language-specific knowledge). In addition, outside of engineering, MATLAB is less commonly used. 
+MATLAB is not open-source, and toolboxes are incredibly expensive. If you plan on ever leaving academia and programming for yourself, or your own company, you should not learn MATLAB (as you will have to pay huge amounts to avoid wasting your language-specific knowledge). In addition, outside of engineering, MATLAB is less commonly used. 
