@@ -8,7 +8,7 @@ toc: true
 adapted: true
 ---
 ## Arrays
-In MATLAB, arrays are a way of storing and manipulating data. Matrices here are two dimensional, with a `n` rows and `m` columns. A vector in MATLAB is defined as a two-dimensional array where one dimension is 1 - this is different to other languages where they can be one-dimensional. 
+In MATLAB, arrays are a way of storing and manipulating data. Matrices here are two-dimensional, with a `n` rows and `m` columns. A vector in MATLAB is defined as a two-dimensional array where one dimension is 1 - this is different to other languages where they can be one-dimensional. 
 
 ## Vectors
 MATLAB is best known for its linear algebra capabilities. In MATLAB, it is easy to create arrays, which are any type of matrix or vector. To make a row vector, we can use square brackets and commas (`,`) from the command window:
@@ -36,3 +36,44 @@ col_vector2 = [10:20]'
 In the Command Window, create a column vector of all the multiples of 3 up to 100. Check the size of the array in Workspace.
 
 ## Matrices
+A matrix can be built in several ways. The simplest is manually using commas and colons as with vectors:
+```
+A = [1,2,3; 4,5,6; 7,8,9]
+B = [1,2,3;
+     4,5,6;
+     7,8,9]
+% A and B are identical but are used to illustrate how code can be written to improve readability
+```
+We can also build using vectors:
+```
+a = [1:5];
+b = [6:10];
+C = [a;b]
+D = [a',b']
+```
+When building matrices this way, it is important to ensure the dimensions are the correct length.
+
+**What do you think happens when we transpose the matrix? Test this out for yourself.**
+
+## Indexing
+Sometimes we care about only certain rows or columns of an array. **Unlike other languages like python, indexing starts at 1** 
+For vectors, we only require one number inside brackets:
+```
+row_vector = [1:10];
+row_vector(1)    % first number in the array
+row_vector(2)    % second number in the array
+row_vector(1:5)  % first 5 numbers in array
+row_vector(end)  % last number in array 
+```
+For matrices, more than one number is required for each dimension (row,column):
+```
+A = magic(5);    % Creates magic square - use `help magic` for info.
+A(1,1)           % First element in row 1 and column 1
+A(end,end)       % Element in end row and column
+A(3,2)           % Element in third row, second column. 
+A(1,:)           % Returns row vector of first row
+A(:,4)           % Returns column vector of fourth column
+```
+**Notice the use of the colon (`:`) to denote all indices**
+
+## Matrix operations
