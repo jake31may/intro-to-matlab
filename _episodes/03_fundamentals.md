@@ -1,6 +1,6 @@
 ---
 layout: page
-title: fundamentals
+title: Fundamentals of MATLAB
 order: 3
 session: 1
 length: 30
