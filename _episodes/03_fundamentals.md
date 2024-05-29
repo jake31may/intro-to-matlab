@@ -22,5 +22,5 @@ attrib_license_link: https://creativecommons.org/licenses/by/4.0/
 MATLAB software allows the user to write code, but essentially MATLAB acts like a glorified calculator. If you open up MATLAB, you
 will see the screen shown below. If the Editor is not shown, click the yellow ‘+’ circled in red.
 
-![MATLAB graphical user interface shown](../fig/M_interface.png).
+![MATLAB graphical user interface shown](../fig/M-interface.png).
 
