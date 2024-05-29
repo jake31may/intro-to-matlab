@@ -122,7 +122,7 @@ a_col * a_row               % produces a square 5 by 5 matrix
 a_row * a_col               % produces a single number.
 ```
 How we get these numbers is shown in the following gif:
-![Illustration of matrix multiplication]()
+![Illustration of matrix multiplication](../fig/multiply_matrices.gif)
 
 Sometimes we want to multiply the element of one matrix with the same of another instead. If we wanted a row vectors of the first 5 square numbers, we could use **element-wise multiplication**, using the dot-star (`.*`) operator:
 ```
