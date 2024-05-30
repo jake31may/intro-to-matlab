@@ -6,7 +6,7 @@ title: Course Information
 
 ## Overview
 
-MATLAB is a coding language that is very popular in academia and relatively easy to learn. This language is particularly good for analysis involving matrices, but is perhaps better known for its plotting capabilities. In this course, you can expect to be acquainted with both and be able to apply code to your own research. 
+MATLAB is a coding language that is very popular in academia and relatively easy to learn. This language is particularly good for analysis involving matrices but is perhaps better known for its plotting capabilities. In this course, you can expect to be acquainted with both and be able to apply code to your own research. 
  
 This is an entry-level introduction to programming and is intended for the first-time or beginner-level user who wishes to learn MATLAB. The basics of coding and data analysis are explored, with opportunities to use these principles in realistic tasks. Visualising the data will also be a focus and you will learn how to customise different plots.  
  
@@ -28,7 +28,7 @@ This is an entry-level introduction to programming and is intended for the first
 
 ## Workshop format
 
-This a hybrid workshop run over 2 sessions. The [schedule can be found here](https://uniexeterrse.github.io/UoE-workshop-template/schedule.html).
+This a hybrid workshop run over 2 sessions. The [schedule can be found here](https://jake31may.github.io/intro-to-matlab/schedule.html).
 
 ## Upcoming course dates
 
@@ -41,15 +41,15 @@ Registration for this course is handled by [University of Exeter Researcher Deve
 
 ## Set-up instructions for attendees
 
-If you have registered for this course you can find the [instructions for setting up your computer here.](https://uniexeterrse.github.io/workshop-template-test/setup.html)
+If you have registered for this course you can find the [instructions for setting up your computer here.](https://jake31may.github.io/intro-to-matlab/setup.html)
 
 ## Start course
 
-If you are unable to attend any of the dates above the [notes for this course are available here](https://uniexeterrse.github.io/workshop-template-test/contents.html) and are freely available to work through in your own time. Please note that you will need to have completed the set up instructions above.
+If you are unable to attend any of the dates above the [notes for this course are available here](https://jake31may.github.io/intro-to-matlab/contents.html) and are freely available to work through in your own time. Please note that you will need to have completed the set-up instructions above.
 
 ## Follow up courses
 
-On completion of these course you will be invited to join a network of other participants. This is a supportive forum for you to ask follow up question and receive tailed invites to follow on courses.
+On completion of this course you will be invited to join a network of other participants. This is a supportive forum for you to ask follow-up questions and receive tailored invites to follow on courses.
 
 ## Feedback
 
@@ -61,7 +61,7 @@ If you are interested in becoming part of our community of workshop helpers, lea
 
 ## Acknowledgements
 
-This course was adapted from XXX and has been developed by the University of Exeter's Research Software Engineering Group and [a team of generous volunteers](https://uniexeterrse.github.io/UoE-workshop-template/acknowledgements.html) who are enthusiastic about sharing their skills with the wider research community. Its provision is dependent on the time of these volunteers. If you have benefitted in any way from this course and want to support its long term sustainability then please take the time to complete our feedback survey, recommend it to your colleagues, and enthuse about it to your senior leadership team.
+This course was adapted from XXX and has been developed by the University of Exeter's Research Software Engineering Group and [a team of generous volunteers](https://jake31may.github.io/intro-to-matlab//acknowledgements.html) who are enthusiastic about sharing their skills with the wider research community. Its provision is dependent on the time of these volunteers. If you have benefitted in any way from this course and want to support its long term sustainability then please take the time to complete our feedback survey, recommend it to your colleagues, and enthuse about it to your senior leadership team.
 
 This workshop is brought to you by:
 
