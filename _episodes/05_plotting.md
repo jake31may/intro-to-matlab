@@ -8,7 +8,7 @@ toc: true
 adapted: true
 ---
 ## First Graph
-Plotting in MATLAB is relatively straight forward once you are aware of the basics. Let's start with line graphs and plotting $y = x^2-2$ between -1 and 1.
+Plotting in MATLAB is relatively straight forward once you are aware of the basics. Let's start with line graphs and plotting $$y = x^2-2$$ between -1 and 1.
 
 Use the code below to create the data for the plot:
 ```
