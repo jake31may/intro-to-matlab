@@ -8,7 +8,7 @@ toc: true
 adapted: true
 ---
 ## First Graph
-Plotting in MATLAB is relatively straight forward once you are aware of the basics. Let's start with line graphs and plotting $$y = x^2-2$$ between -1 and 1.
+Plotting in MATLAB is relatively straightforward once you are aware of the basics. Let's start with line graphs and plotting $y = x^2-2$ between -1 and 1.
 
 Use the code below to create the data for the plot:
 ```
@@ -22,8 +22,8 @@ figure(1)  % this line isn't necessary
 plot(x,y)  % plots x and y data
 ```
 You should get a graph that looks like this:
-![Plot1](plot1.png)
-As you can see, the points are a bit jagged. **Adjust the step size in $x$ so that the line becomes smoother**
+![Plot1](../fig/plot1.png)
+As you can see, the lines are a bit jagged. **Adjust the step size in $x$ so that the line becomes smoother**
 
 ## Graph settings
 MATLAB offers plenty of customisation which can help improve how our graphs look. For example, within the `plot` function, we can change the appearance of the line:
@@ -39,7 +39,7 @@ title('$y = x^2 -2$',Interpreter='latex')  % adds title using a LaTeX interprete
 ```
 **Top Tip: If using a latex interpreter, use the dollar sign (`$`) either side of the maths.**
 
-![Plot2](plot2.png)
+![Plot2](../fig/plot2.png)
 
 **Check out the MATLAB ![plot](https://www.mathworks.com/help/matlab/ref/plot.html) page for more information.**
 
@@ -51,10 +51,10 @@ Create a script that replicates the following graph for $y = 4x^2 -x +5$:
 ![plot3](plot3.png)
 
 ## Multiple plots
-Sometimes we may want to plot on the same figure. There are two ways this is commonly completed: using `hold` or `subplot`.
+Sometimes we may want to plot on the same figure. This is commonly completed in two ways: using `hold` or `subplot`.
 
 ### hold
-Let's consider the sine and cosine functions that we wish to plot on the same figure: $y = \sin(x)$ and $y= \cos(x)$. We could easily create a matrix with the output data with the following code: 
+Let's consider the sine and cosine functions we wish to plot on the same figure: $y = \sin(x)$ and $y= \cos(x)$. We could easily create a matrix with the output data with the following code: 
 ```
 % Create data
 x = -pi:0.01:pi;
@@ -90,3 +90,26 @@ legend('sin(x)','cos(x)',Location='NorthWest')
 **Try this yourself using $y = 2\sin(x)$ and $y = x^3 + 4x -3$**
 
 ### Subplots
+Subplots enable you to have multiple plots on the same figure. This can make presenting information/data related to each other much easier to read, ideal in publications.
+To get two plots side-by-side, use the following command:
+```
+x = -pi:0.01:pi;
+y1 = sin(x); y2 = cos(x);
+
+figure(3)
+subplot(1,2,1)            % Creates subplot ( 1 row, 2 columns), and plots at 1st position
+plot(x,y1)
+grid on
+xlabel('x'), ylabel('y')
+title('$y = \sin(x)$',Interpreter = 'Latex')
+
+subplot(1,2,2)           % Creates subplot ( 1 row, 2 columns), and plots at 2nd position
+plot(x,y2)
+grid on
+xlabel('x'), ylabel('y')
+title('$y=\cos(x)$',Interpreter = 'Latex')
+```
+
+**By modifying the above code, assign a new variable `y3 = y1 + y2`. and create a subplot of the 3 plots (`y1`, `y2`, `y3`) arranged vertically**
+
+We can even do 2-dimensional grids for plots. What's more, we can overlay plots over consecutive 
