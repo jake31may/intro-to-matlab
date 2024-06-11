@@ -111,7 +111,7 @@ title('$y=\cos(x)$',Interpreter = 'Latex')
 ```
 
 **By modifying the above code, assign a new variable `y3 = y1 + y2`. and create a subplot of the 3 plots (`y1`, `y2`, `y3`) arranged vertically**
-> ### Solution
+### Solution
 > ```
 > x = -pi:0.01:pi;
 > y1 = sin(x); y2 = cos(x); y3 = y1 + y2;
