@@ -111,7 +111,7 @@ title('$y=\cos(x)$',Interpreter = 'Latex')
 ```
 
 **By modifying the above code, assign a new variable `y3 = y1 + y2`. and create a subplot of the 3 plots (`y1`, `y2`, `y3`) arranged vertically**
-![subplot_act1](subplot_act1.jpg)
+![subplot_act1](../fig/subplot_act_1.jpg)
 
 > >### Solution
 > > ```
@@ -145,4 +145,4 @@ subplot(2,2,[2,4])
 plot(x,y3)
 ```
 ** Adapt the above code to produce the following graph:**
-![subplot_act2](subplot_act2.jpg)
+![subplot_act2](../fig/subplot_act2.jpg)
