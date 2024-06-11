@@ -112,27 +112,27 @@ title('$y=\cos(x)$',Interpreter = 'Latex')
 
 **By modifying the above code, assign a new variable `y3 = y1 + y2`. and create a subplot of the 3 plots (`y1`, `y2`, `y3`) arranged vertically**
 > ### Solution
-> > ```
-> > x = -pi:0.01:pi;
-> > y1 = sin(x); y2 = cos(x); y3 = y1 + y2;
-> > figure(4)
-> > subplot(3,1,1)            % Creates subplot ( 3 rows, 1 column), and plots at 1st position
-> > plot(x,y1)
-> > grid on
-> > xlabel('x'), ylabel('y')
-> > title('$y = \sin(x)$',Interpreter = 'Latex')
-> > 
-> > subplot(3,1,2)           % Creates subplot ( 3 rows, 1 column), and plots at 2nd position
-> > plot(x,y2)
-> > grid on
-> > xlabel('x'), ylabel('y')
-> > title('$y=\cos(x)$',Interpreter = 'Latex')
-> > 
-> > subplot(3,1,3)           % Creates subplot ( 3 rows, 1 column), and plots at 3rd position
-> > plot(x,y3)
-> > grid on
-> > xlabel('x'), ylabel('y')
-> > title('$y=\cos(x)+\sin(x)$',Interpreter = 'Latex')
-> >```
+> ```
+> x = -pi:0.01:pi;
+> y1 = sin(x); y2 = cos(x); y3 = y1 + y2;
+> figure(4)
+> subplot(3,1,1)            % Creates subplot ( 3 rows, 1 column), and plots at 1st position
+> plot(x,y1)
+> grid on
+> xlabel('x'), ylabel('y')
+> title('$y = \sin(x)$',Interpreter = 'Latex')
+> 
+> subplot(3,1,2)           % Creates subplot ( 3 rows, 1 column), and plots at 2nd position
+> plot(x,y2)
+> grid on
+> xlabel('x'), ylabel('y')
+> title('$y=\cos(x)$',Interpreter = 'Latex')
+> 
+> subplot(3,1,3)           % Creates subplot ( 3 rows, 1 column), and plots at 3rd position
+> plot(x,y3)
+> grid on
+> xlabel('x'), ylabel('y')
+> title('$y=\cos(x)+\sin(x)$',Interpreter = 'Latex')
+>```
 
 We can even do 2-dimensional grids for plots. What's more, we can overlay plots over consecutive 
