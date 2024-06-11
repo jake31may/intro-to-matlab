@@ -111,25 +111,27 @@ title('$y=\cos(x)$',Interpreter = 'Latex')
 ```
 
 **By modifying the above code, assign a new variable `y3 = y1 + y2`. and create a subplot of the 3 plots (`y1`, `y2`, `y3`) arranged vertically**
+![subplot_act1](subplot_act1.jpg)
+
 > >### Solution
 > > ```
 > > x = -pi:0.01:pi;
 > > y1 = sin(x); y2 = cos(x); y3 = y1 + y2;
 > > figure(4)
 > > subplot(3,1,1)            % Creates subplot ( 3 rows, 1 column), and plots at 1st position
-> > plot(x,y1)
+> > plot(x,y1,'b',LineWidth=2)
 > > grid on
 > > xlabel('x'), ylabel('y')
 > > title('$y = \sin(x)$',Interpreter = 'Latex')
 > > 
 > > subplot(3,1,2)           % Creates subplot ( 3 rows, 1 column), and plots at 2nd position
-> > plot(x,y2)
+> > plot(x,y2,'r',LineWidth=2)
 > > grid on
 > > xlabel('x'), ylabel('y')
 > > title('$y=\cos(x)$',Interpreter = 'Latex')
 > > 
 > > subplot(3,1,3)           % Creates subplot ( 3 rows, 1 column), and plots at 3rd position
-> > plot(x,y3)
+> > plot(x,y3,'m',LineWidth=2)
 > > grid on
 > > xlabel('x'), ylabel('y')
 > > title('$y=\cos(x)+\sin(x)$',Interpreter = 'Latex')
@@ -137,4 +139,10 @@ title('$y=\cos(x)$',Interpreter = 'Latex')
 > > {: .solution}
 > {: .challenge}
 
-We can even do 2-dimensional grids for plots. What's more, we can overlay plots over consecutive 
+We can even do 2-dimensional grids for plots. What's more, we can overlay plots over neighbouring grids by selecting the correct indices:
+```
+subplot(2,2,[2,4])
+plot(x,y3)
+```
+** Adapt the above code to produce the following graph:**
+![subplot_act2](subplot_act2.jpg)
