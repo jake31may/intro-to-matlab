@@ -145,4 +145,4 @@ subplot(2,2,[2,4])
 plot(x,y3)
 ```
 ** Adapt the above code to produce the following graph:**
-![subplot_act2](../fig/subplot_act2.jpg)
+![subplot_act2](../fig/subplot_act_2.jpg)
