@@ -1,13 +1,18 @@
 ---
 layout: page
-title: Plots 1
+title: Plots
 order: 5
 session: 1
 length: 30
 toc: true
 adapted: true
 ---
-## First Graph
+# Learning Objectives
+- Create and customise line, scatter and bar plots in MATLAB
+- Plot multiple datasets onto the same figure and/or subplots.
+- Gain familiarity with arrays.
+
+# First Graph
 Plotting in MATLAB is relatively straightforward once you are aware of the basics. Let's start with line graphs and plotting $y = x^2-2$ between -1 and 1.
 
 Use the code below to create the data for the plot:
@@ -25,7 +30,7 @@ You should get a graph that looks like this:
 ![Plot1](../fig/plot1.png)
 As you can see, the lines are a bit jagged. **Adjust the step size in $x$ so that the line becomes smoother**
 
-## Graph settings
+# Graph settings
 MATLAB offers plenty of customisation which can help improve how our graphs look. For example, within the `plot` function, we can change the appearance of the line:
 ```
 plot(x,y,'r--',LineWidth=2)   % creates dashed red line with thicker line width.
@@ -45,15 +50,15 @@ title('$y = x^2 -2$',Interpreter='latex')  % adds title using a LaTeX interprete
 
 The MATLAB website provides a comprehensive guide to its in-built functions which is extremely helpful when stating out coding.
 
-## Task 3a
+### Task 3a
 Create a script that replicates the following graph for $y = 4x^2 -x +5$:
 
 ![plot3](plot3.png)
 
-## Multiple plots
+# Multiple plots
 Sometimes we may want to plot on the same figure. This is commonly completed in two ways: using `hold` or `subplot`.
 
-### hold
+## hold
 Let's consider the sine and cosine functions we wish to plot on the same figure: $y = \sin(x)$ and $y= \cos(x)$. We could easily create a matrix with the output data with the following code: 
 ```
 % Create data
@@ -87,9 +92,10 @@ hold off                 % takes hold off.
 legend('sin(x)','cos(x)',Location='NorthWest')
 ```
 
-**Try this yourself using $y = 2\sin(x)$ and $y = x^3 + 4x -3$**
+### Task 3b 
+Try this yourself using $y = 2\sin(x)$ and $y = x^3 + 4x -3$
 
-### Subplots
+## Subplots
 Subplots enable you to have multiple plots on the same figure. This can make presenting information/data related to each other much easier to read, ideal in publications.
 To get two plots side-by-side, use the following command:
 ```
@@ -109,8 +115,8 @@ grid on
 xlabel('x'), ylabel('y')
 title('$y=\cos(x)$',Interpreter = 'Latex')
 ```
-
-**By modifying the above code, assign a new variable `y3 = y1 + y2`. and create a subplot of the 3 plots (`y1`, `y2`, `y3`) arranged vertically**
+### Task 3b
+By modifying the above code, assign a new variable `y3 = y1 + y2`. and create a subplot of the 3 plots (`y1`, `y2`, `y3`) arranged vertically**
 ![subplot_act1](../fig/subplot_act_1.jpg)
 
 > >### Solution
@@ -144,10 +150,11 @@ We can even do 2-dimensional grids for plots. What's more, we can overlay plots 
 subplot(2,2,[2,4])
 plot(x,y3)
 ```
-** Adapt the above code to produce the following graph:**
+### Task 3d
+Adapt the above code to produce the following graph:
 ![subplot_act2](../fig/subplot_act_2.jpg)
 
-## Bar charts
+# Bar charts
 Another popular plot is the bar graph. The difference for this function is that the x-axis needs to be categorial, which can include *strings* or a sequence of text. To stop confusion between variable names, we enclose the text in with speech marks `"` or apostrophes `'`. Below is an example of a bar graph code for the cost of some objects:
 ```
 fruit = ["Apples", "Bananas", "Cherries"];
@@ -159,4 +166,5 @@ ylabel('Cost (£)')
 ```
 [!bar1](../fig/bar_1.jpg)
 
-**Create a bar graph of eye colour in the group**.
+### Task 3e
+Create a bar graph of eye colour in the group.
