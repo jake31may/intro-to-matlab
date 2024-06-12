@@ -7,7 +7,12 @@ length: 30
 toc: true
 adapted: true
 ---
-## Arrays
+# Learning Objectives
+- Get to grips with arrays and elements
+- Learn how to use basic operations with vectors and matrices
+- Select rows, columns and elements from matrices using indices.
+
+# Arrays
 In MATLAB, arrays are a way of storing and manipulating data. Matrices here are two-dimensional, with a `n` rows and `m` columns. A vector in MATLAB is defined as a two-dimensional array where one dimension is 1 - this is different to other languages where they can be one-dimensional. 
 
 ## Vectors
@@ -32,7 +37,7 @@ We can also convert the row vector to a column vector by transposing the row vec
 col_vector1 = transpose(row_vector)
 col_vector2 = [10:20]'
 ```
-## Task 2a
+### Task 2a
 In the Command Window, create a column vector of all the multiples of 3 up to 100. Check the size of the array in Workspace.
 
 ## Matrices
@@ -60,14 +65,14 @@ Some other functions can be used to create matrices too, notably `ones([n,m])`, 
 mat_A = ones([2,3])
 mat_B = zeros([6,7])
 mat_C = rand([n,m])
+mat_eye = eye(3)
 ```
 **You are always encouraged to use the MATLAB help function to find out more information, for example:**
 ```
 help ones
 ```
-## Task 2b
 
-## Indexing
+# Indexing
 Sometimes we care about only certain rows or columns of an array. **Unlike other languages like python, indexing starts at 1** 
 For vectors, we only require one number inside brackets:
 ```
@@ -88,19 +93,20 @@ A(:,4)           % Returns column vector of fourth column
 ```
 **Notice the use of the colon (`:`) to denote all indices**
 
-## Task 2c
+### Task 2c
 1. Create a magic square of size 7
 2. Using the `sum` function, find out the sum of the first row.
 3. Using the `sum` function, find out the sum of the last column.
 4. Guess what a magic square is. Check your guess by using the `help` function within MATLAB.
 
-## Matrix operations - summation
+# Matrix operations 
+## Summation
 In most cases, matrices need to be the same size to add or subtract together.
 ```
 A = [1,2,3; 4,5,6];
 B = [4,5,6; 1,2,3];
 ```
-## Task 2d
+### Task 2d
 Try the following operations:
 1. A+B
 2. B-A
@@ -109,7 +115,7 @@ Try the following operations:
 5. What size row vector can be added to A? What happens?
 6. What size column vector can be added to B? What happens?
 
-## Matrix operations - product
+## Product
 "Matrix multiplication" can take two forms which can affect how we code the multiplication
 **In traditional matrix multiplication**, if we wish to multiply A and B, the number of columns of A and the number of rows of B must be the same. This is useful in linear algebra and creates a matrix with the same number of rows as A, and the number of columns in B.
 
@@ -135,4 +141,4 @@ a.^2
 ```
 The same rules apply for division.
 
-**We will practice this difference in the next episode**
+**We will practice this difference in later episodes**
