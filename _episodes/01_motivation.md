@@ -13,7 +13,7 @@ attrib_license: CC-BY 4.0
 attrib_license_link: https://creativecommons.org/licenses/by/4.0/
 ---
 
-## Learning Objectives
+# Learning Objectives
 
 In this lesson, we will discuss:
 
@@ -21,11 +21,11 @@ In this lesson, we will discuss:
 - Why you should learn to code
 - Why MATLAB is useful!
 
-## Who are you?
+# Who are you?
 
 As we begin, and ensure that everyone has a working MATLAB installation, feel free to write in the Teams chat which Department you are from, and any reasons you signed up for this course!  
 
-## Why learn to code?
+# Why learn to code?
 
 Loads of reasons! Focused on researchers specifically:
 
@@ -41,7 +41,7 @@ But most importantly:
 
 - It is fun, and also incredibly satisfying, to build things!
 
-## Why MATLAB?
+# Why MATLAB?
 - MATLAB is commonly used in engineering and academic settings.
 - Matrix manipulation in MATLAB is well considered, so if using matrices is a significant part of your research, MATLAB is an obvious choice.
 - Present data and plots professionally for publications, presentations and thesis.
@@ -49,6 +49,6 @@ But most importantly:
 - Graphical user interface (GUI) is attractive and easy to use.  
 - Simulink is an effective toolbox with many powerful, in-built functions, extending usage for more complex applications. 
 
-## Why NOT MATLAB?
+# Why NOT MATLAB?
 
 MATLAB is not open-source, and toolboxes are incredibly expensive. If you plan on ever leaving academia and programming for yourself, or your own company, you should not learn MATLAB (as you will have to pay huge amounts to avoid wasting your language-specific knowledge). In addition, outside of engineering, MATLAB is less commonly used. 
