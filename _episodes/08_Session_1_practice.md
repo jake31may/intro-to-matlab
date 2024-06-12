@@ -8,8 +8,9 @@ toc: true
 adapted: true
 ---
 # Learning Objectives
-- Apply skills learnt in this session to mathematics problem
-- Use `while` loop
+- Use skills learnt in this session to mathematics problem
+- Apply `while` loop to code
+- Create a visualisation from data.
 
 # $3x+1$
 We will practice a number of the skills we have learnt already to look at the $3x+1$ Problem. There are two rules for this problem:
