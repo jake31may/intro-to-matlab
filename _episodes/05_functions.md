@@ -7,6 +7,10 @@ length: 30
 toc: true
 adapted: true
 ---
+# Learning Objectives
+- Create and save simple functions
+- Understand the differences between inputs and outputs.
+
 # Functions
 We have used so far in-built MATLAB functions. In this episode, we will learn to code our own functions, allowing us to repeat code more readily, and make our code more readable. Functions are input-output machines, and with coding, they can be extremely flexible. and allow us to customise with a high degree of control.  
 
@@ -27,7 +31,9 @@ calculate_circumference(1)
 ```
 **It is always useful to save variables with descriptive names, particularly if sharing your code with others. For example, `radius` could be shortened to `r` however it can be difficult to understand what `r` is without additional context.**
 
-## Task 4a
-1. Using the last function as a template, now create a function `calculate_area` that calculates the area of the circle given the radius: $a = \pi r^2$.
-2. Now create a function `calculate_volume` that uses `calculate_area` and a length, $L$, to calculate the volume of a cylinder: $V = a L$. The function will need to take two *arguments* like: `calculate_volume(radius, length)`.
+### Task 4a
+Using the last function as a template, now create a function `calculate_area` that calculates the area of the circle given the radius: $a = \pi r^2$.
+
+### Task 4b
+Create a function `calculate_volume` that uses `calculate_area` and a length, $L$, to calculate the volume of a cylinder: $V = a L$. The function will need to take two *arguments* like: `calculate_volume(radius, length)`.
 
