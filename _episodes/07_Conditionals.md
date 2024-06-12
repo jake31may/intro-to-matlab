@@ -27,6 +27,20 @@ Sometimes we may want to check if is not equal, in which case we use the tilde a
 5 ~= 2
 ```
 
+We can use conditional statements for **indexing**, which tells where in an array the statement is true.
+```
+x = 1:10  
+x(x<4)      % selects elements that are less than 4
+
+y = [3,8,4,1,7,0,2]
+y(y>3)      % selects elements that are more than 3
+```
+We can even use this to remove elements from an array:
+```
+y(y>3) = []; % removes elements that are more than 3 from the array
+y
+```
+
 ## Combining conditions
 Sometimes we require multiple conditions to be met at the same time. Here we use two ampersands `&&`:
 ```
@@ -48,6 +62,7 @@ end
 ```
 **Change the number and see what the output is**.
 
+## If-else statements
 We may also want something to happen if the statement is not True. This is one option:
 ```
 x = 8;
