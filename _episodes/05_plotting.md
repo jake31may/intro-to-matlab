@@ -146,3 +146,17 @@ plot(x,y3)
 ```
 ** Adapt the above code to produce the following graph:**
 ![subplot_act2](../fig/subplot_act_2.jpg)
+
+## Bar charts
+Another popular plot is the bar graph. The difference for this function is that the x-axis needs to be categorial, which can include *strings* or a sequence of text. To stop confusion between variable names, we enclose the text in with speech marks `"` or apostrophes `'`. Below is an example of a bar graph code for the cost of some objects:
+```
+fruit = ["Apples", "Bananas", "Cherries"];
+cost = [1, 3, 4];
+
+bar(fruit,cost)
+xlabel('Fruit')
+ylabel('Cost (£)')
+```
+[!bar1](../fig/bar_1.jpg)
+
+**Create a bar graph of eye colour in the group**.
