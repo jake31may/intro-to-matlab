@@ -7,7 +7,12 @@ length: 30
 toc: true
 adapted: true
 ---
-## For Loops
+# Learning Objectives
+- Apply `for` loops into functions and scripts.
+- Understand the usefulness of nested loops.
+- Use `while` loops and the risks if not careful.
+
+# `for` Loops
 Loops help to automate code, executing many similar actions. From the previous example, we may want to calculate the circumference of multiple circles. We could run the `calculate_circumference` function each time, however, this can be time-consuming if we want to do this many times:
 ```
 calculate_circumference(1)
@@ -24,8 +29,8 @@ end
 ```
 Let's dissect this code first:
 1. We use `for` and `end` to let MATLAB know where the for loop begins and ends.
-2. Code in-between will be ran as many times as the loop is defined for. In the above example, this will be 100 times.
-3. In the first loop, radius will equal 1, and in the second two **remember that `1:100` will create a list of numbers 1 to 100**.
+2. Code in-between will be run as many times as the loop is defined for. In the above example, this will be 100 times.
+3. In the first loop, the radius will equal 1, and in the second two **remember that `1:100` will create a list of numbers 1 to 100**.
 4. The loop will continue until radius = 100, then will continue to run code beyond the `end`.
 
 To get a better idea, let's try a simpler loop to get used to the idea:
@@ -42,10 +47,10 @@ for random_variable = 1:3
 end
 ```
 
-## Task
+### Task 6a
 Using what we have learnt already, create a loop which prints multiples of 3.
 
-## Nested Loops
+# Nested Loops
 Within a loop, we can also include other loops. This is called **nested loops** and these can be helpful when considering multiple variables of differing values:
 ```
 for big_loop = ['A','B','C']
@@ -56,10 +61,10 @@ end
 ```
 **What do you expect the output of the above code to be?**
 
-## Task
+### Task 6b
 Try calculating the volume of a cylinder for radii between 0.1 and 1 in 0.1 steps, and lengths from 0.05 to 0.2 in 0.04 steps using nested `for` loops. What challenges can you see when loops get very large?
 
-## While Loops
+# While Loops
 Sometimes we may not know how many loops are required. Instead, we may want to break the loop when a condition has been met. Try this countdown:
 ```
 number = 5;
