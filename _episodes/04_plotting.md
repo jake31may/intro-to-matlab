@@ -16,39 +16,48 @@ adapted: true
 Plotting in MATLAB is relatively straightforward once you are aware of the basics. Let's start with line graphs and plotting $y = x^2-2$ between -1 and 1.
 
 Use the code below to create the data for the plot:
+
 ```
 x = -1:0.2:1;  % Create a row vector of the input numbers we wish to evaluate
 y = x.^2-2;    % Create a row vector of the output numbers we wish to plot
 ```
 
 Now we can use the `plot` function in MATLAB to sort the rest:
+
 ```
 figure(1)  % this line isn't necessary
 plot(x,y)  % plots x and y data
 ```
 You should get a graph that looks like this:
+
 ![Plot1](../fig/plot1.png)
+
+
 As you can see, the lines are a bit jagged. **Adjust the step size in $x$ so that the line becomes smoother**
 
 # Graph settings
 MATLAB offers plenty of customisation which can help improve how our graphs look. For example, within the `plot` function, we can change the appearance of the line:
+
 ```
 plot(x,y,'r--',LineWidth=2)   % creates dashed red line with thicker line width.
 ```
+
 We can also add a grid and label the axes and title, but ensure that the text is in apostrophes(`'`):
+
 ```
 grid on                                    % adds a grid to background
 xlabel('x')                                % labels bottom axes
 ylabel('y')                                % labels side axes
 title('$y = x^2 -2$',Interpreter='latex')  % adds title using a LaTeX interpreter
 ```
+
 **Top Tip: If using a latex interpreter, use the dollar sign (`$`) either side of the maths.**
 
 ![Plot2](../fig/plot2.png)
 
-**Check out the MATLAB ![plot](https://www.mathworks.com/help/matlab/ref/plot.html) page for more information.**
+**Check out the MATLAB (https://www.mathworks.com/help/matlab/ref/plot.html) page for more information.**
 
-The MATLAB website provides a comprehensive guide to its in-built functions which is extremely helpful when stating out coding.
+The MATLAB website provides a comprehensive guide to its in-built functions which is extremely helpful when starting out coding.
 
 ### Task 3a
 Create a script that replicates the following graph for $y = 4x^2 -x +5$:
@@ -119,37 +128,14 @@ title('$y=\cos(x)$',Interpreter = 'Latex')
 By modifying the above code, assign a new variable `y3 = y1 + y2`. and create a subplot of the 3 plots (`y1`, `y2`, `y3`) arranged vertically**
 ![subplot_act1](../fig/subplot_act_1.jpg)
 
-> >### Solution
-> > ```
-> > x = -pi:0.01:pi;
-> > y1 = sin(x); y2 = cos(x); y3 = y1 + y2;
-> > figure(4)
-> > subplot(3,1,1)            % Creates subplot ( 3 rows, 1 column), and plots at 1st position
-> > plot(x,y1,'b',LineWidth=2)
-> > grid on
-> > xlabel('x'), ylabel('y')
-> > title('$y = \sin(x)$',Interpreter = 'Latex')
-> > 
-> > subplot(3,1,2)           % Creates subplot ( 3 rows, 1 column), and plots at 2nd position
-> > plot(x,y2,'r',LineWidth=2)
-> > grid on
-> > xlabel('x'), ylabel('y')
-> > title('$y=\cos(x)$',Interpreter = 'Latex')
-> > 
-> > subplot(3,1,3)           % Creates subplot ( 3 rows, 1 column), and plots at 3rd position
-> > plot(x,y3,'m',LineWidth=2)
-> > grid on
-> > xlabel('x'), ylabel('y')
-> > title('$y=\cos(x)+\sin(x)$',Interpreter = 'Latex')
-> > ```
-> > {: .solution}
-> {: .challenge}
 
 We can even do 2-dimensional grids for plots. What's more, we can overlay plots over neighbouring grids by selecting the correct indices:
+
 ```
 subplot(2,2,[2,4])
 plot(x,y3)
 ```
+
 ### Task 3d
 Adapt the above code to produce the following graph:
 ![subplot_act2](../fig/subplot_act_2.jpg)
