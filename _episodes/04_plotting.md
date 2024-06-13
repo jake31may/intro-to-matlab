@@ -60,9 +60,9 @@ title('$y = x^2 -2$',Interpreter='latex')  % adds title using a LaTeX interprete
 The MATLAB website provides a comprehensive guide to its in-built functions which is extremely helpful when starting out coding.
 
 ### Task 3a
-Create a script that replicates the following graph for $y = 4x^2 -x +5$:
+Create a script that replicates the following graph for $y = 4x^2 -x - 5$:
 
-![plot3](plot3.png)
+![plot3](../fig/Task_3a.jpg)
 
 # Multiple plots
 Sometimes we may want to plot on the same figure. This is commonly completed in two ways: using `hold` or `subplot`.
@@ -150,7 +150,7 @@ bar(fruit,cost)
 xlabel('Fruit')
 ylabel('Cost (£)')
 ```
-[!bar1](../fig/bar_1.jpg)
+![bar1](../fig/bar_1.jpg)
 
 ### Task 3e
 Create a bar graph of eye colour in the group.
