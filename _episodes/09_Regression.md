@@ -16,13 +16,13 @@ adapted: true
 # Regression
 Regression allows us to make relationships between variables. For example, see the graph below on how the sunflower height increases over several weeks:
 
-![sunflower](../figs/sunflower.jpg)
+![sunflower](../fig/sunflower.jpg)
 
 How much do we expect the sunflower to grow each day? How tall is the sunflower likely to be by day 28?
 
 To answer these questions, one may plot a "line of best-fit", which is a regression line describing the relationship between days and height:
 
-![sunflower2](../figs/sunflower2.jpg)
+![sunflower2](../fig/sunflower2.jpg)
 
 Here, the line of best fit shows that by day 28, we predict the height of the sunflower to be approximately 8.5 cm. We can also inspect the gradient to be 0.3 cm/day, which is the average growth.
 
@@ -67,7 +67,25 @@ Here's the example for the sunflower graph above:
 ```
 days = [0:21]';  % day data
 height = [0.07,0.33,0.76,1.00,1.27,1.66,1.85,2.27,2.56,2.87,3.07,3.38,3.77,3.99,4.31,4.64,4.99,5.21,5.53,5.81,6.19,6.4700]'; % height data
+
 X = [ones([22,1]),days];  % X matrix;
 
 coefficients = (X'*X)^(-1) * X' * height  % displays coefficients for line of best fit 
+```
+This should get about 0.08 for $c$ and 0.3 for $m_1$. To draw the line of best fit, we can adapt the polynomial regression code:
+```
+x = [0:0.1:28]';
+X = [ones([length(x),1]),x];
+
+y = X * coefficients;
+
+% plot line of best fit
+figure()
+plot(X(:,2), y,'k-')
+xlabel('Days'), ylabel('Height in cm')
+
+% plot points too
+hold on
+plot(days,height,'bx')
+hold off
 ```
