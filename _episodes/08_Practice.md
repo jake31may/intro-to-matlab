@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Session 1 practice - Collatz Conjecture
+title: Practice - Collatz Conjecture
 order: 9
 session: 1
 length: 30
