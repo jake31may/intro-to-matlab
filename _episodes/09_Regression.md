@@ -107,4 +107,4 @@ Find the coefficients for a regression line, and plot the line between 0 and 2 s
 ### Bonus
 What happens to the coefficients if we consider a third-order polynomial - $y = c + m_1 x + m_2 x^2 + m_3 x^3$?
 
-[1]:{{jake31may.github.io}}/downloads/projectile.csv
+[1]:../downloads/projectile.csv
