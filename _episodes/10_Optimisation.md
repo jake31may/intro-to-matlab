@@ -63,7 +63,7 @@ Use the bisection method from above to find roots. Try different values of `inti
 
 # Newton-Rapson
 This is the most widely used of all root-locating formulas. One way of deriving the Newton-Rhapson formula is by graphical derivation:
-![newtonRapson](../fig/NR_graph.png)
+![newtonRapson](../fig/NR-graph.png)
 
 The Newton-Rapson method is given as:
 $x_{i+1} = x_i -   \frac{f(x_i)}{f'(x_i)}$
@@ -101,7 +101,7 @@ Try the Newton-Rapson method with the same function. Compare how quickly the roo
 
 # When Newton-Rapson breaks down
 Sometimes algorithms break down. Below shows some cases when Newton-Rapson breaks down.
-![Newton_fail](../fig/NR_fail.png)
+![Newton_fail](../fig/NR-fail.png)
 
 ### Task 9d
 How might you address bad initial guesses, and how can we sure of how many roots there are? 
