@@ -58,7 +58,7 @@ y = [ones_col,x,x.^2]*[c; m1; m2]
 # Formulating Regression Lines
 So we've just seen a good method of creating lines when we know the coefficients ($c$, $m_1$...), but often we have the data and want to find a relationship.
 
-To simplify notation, let's set $X = [1, x_1, ... x_n]$. Through linear algebra, we can solve for the coefficients using the following formula:
+To simplify notation, let's set $X = [1, x, x^2, ..., x^n]$. Through linear algebra, we can solve for the coefficients using the following formula:
 $(X'X)^{-1} X' y$ where the apostrophe (`'`) is the transpose of the matrix. Don't worry, in MATLAB we will type this:
 ```
 (X'X)^(-1) * X' * y
@@ -72,7 +72,7 @@ X = [ones([22,1]),days];  % X matrix;
 
 coefficients = (X'*X)^(-1) * X' * height  % displays coefficients for line of best fit 
 ```
-This should get about 0.08 for $c$ and 0.3 for $m_1$. To draw the line of best fit, we can adapt the polynomial regression code:
+This should get approximately 0.08 for $c$ and 0.3 for $m_1$. To draw the line of best fit, we can adapt the polynomial regression code:
 ```
 x = [0:0.1:28]';
 X = [ones([length(x),1]),x];
@@ -89,3 +89,22 @@ hold on
 plot(days,height,'bx')
 hold off
 ```
+
+### Task 8a
+Download the following [csv file][1] and load the csv using the following code:
+```
+Data = readmatrix('projectile.csv'); % loads in matrix from csv
+time = Data(:,1);                    % first column is time
+dis = Data(:,2);                     % second column is displacement
+```
+
+### Task 8b
+Plot the data (time-displacement) as a scatter graph. 
+
+### Task 8c
+Find the coefficients for a regression line, and plot the line between 0 and 2 seconds. Create a legend to distinguish the two data on the plot. **Hint: we expect the trend to be second order or a quadratic - $y = c + m_1 x + m_2 x.^2$.
+
+### Bonus
+What happens to the coefficients if we consider a third-order polynomial - $y = c + m_1 x + m_2 x^2 + m_3 x^3$?
+
+[1]:{{jake31may.github.io}}/download/projectile.csv
