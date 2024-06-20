@@ -16,17 +16,17 @@ Fitbit is a wearable device which tracks and stores data of the user. Data has b
 
 |Year label| File link  |
 |--------|------------|
-|A       |[Year_A.csv][1]|
-|B       |[Year_B.csv][2]|
-|C       |[Year_C.csv][3]|
-|D       |[Year_D.csv][4]|
-|E       |[Year_E.csv][5]|
+|A       |[Year_A.csv][11]|
+|B       |[Year_B.csv][21]|
+|C       |[Year_C.csv][31]|
+|D       |[Year_D.csv][41]|
+|E       |[Year_E.csv][51]|
 
-[1]:../downloads/Year_A.csv
-[2]:../downloads/Year_B.csv
-[3]:../downloads/Year_C.csv
-[4]:../downloads/Year_D.csv
-[5]:../downloads/Year_E.csv
+[11]:../downloads/Year_A.csv
+[21]:../downloads/Year_B.csv
+[31]:../downloads/Year_C.csv
+[41]:../downloads/Year_D.csv
+[51]:../downloads/Year_E.csv
 
 The primary challenge is to determine which year is 2020, the first year of the COVID-19 pandemic. What other information can you deduce from the data? It may be   possible for example to predict an age range, but justify your reasons. 
 
